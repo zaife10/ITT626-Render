@@ -21,8 +21,8 @@ app.use(
         checkPeriod:86400000
       }),
       secret: 'secret',
-      resave: false,
-      saveUninitialized: true
+      resave: true,
+      saveUninitialized: false
     })
   );
 
