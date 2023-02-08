@@ -34,11 +34,11 @@ exports.getLogin = (req, res, next) => {
 exports.postLogin = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "houserental"
-   });
+      host: "eu-cdbr-west-03.cleardb.net",
+      user: "bfba59f0e28796",
+      password: "681ba9b5",
+      database: "heroku_8ca467a3d193d0e"
+  });
 
    data = "SELECT * " +
       "FROM  user " +
@@ -72,11 +72,11 @@ exports.getCreateAccount = (req, res, next) => {
 exports.postCreateAccount = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "houserental"
-   });
+      host: "eu-cdbr-west-03.cleardb.net",
+      user: "bfba59f0e28796",
+      password: "681ba9b5",
+      database: "heroku_8ca467a3d193d0e"
+  });
 
    var p1 = req.body.pass;
    var p2 = req.body.con_pass;
@@ -106,11 +106,11 @@ exports.getCategory = (req, res, next) => {
 exports.postCategory = (req, res, next) => {
    //console.log(req.body);
    var connectDB = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "houserental"
-   });
+      host: "eu-cdbr-west-03.cleardb.net",
+      user: "bfba59f0e28796",
+      password: "681ba9b5",
+      database: "heroku_8ca467a3d193d0e"
+  });
 
    data = "SELECT * " +
       " FROM  category " +
@@ -141,11 +141,11 @@ exports.postStatus = (req, res, next) => {
 
    //console.log(req.body);
    var connectDB = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "houserental"
-   });
+      host: "eu-cdbr-west-03.cleardb.net",
+      user: "bfba59f0e28796",
+      password: "681ba9b5",
+      database: "heroku_8ca467a3d193d0e"
+  });
    var date = req.body.date;
    //console.log(date)
    data = "INSERT INTO bookingstatus " +
@@ -175,11 +175,11 @@ exports.postStatus = (req, res, next) => {
 exports.getShowStatus = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "houserental"
-   });
+      host: "eu-cdbr-west-03.cleardb.net",
+      user: "bfba59f0e28796",
+      password: "681ba9b5",
+      database: "heroku_8ca467a3d193d0e"
+  });
 
    data = "SELECT * " +
       " FROM  bookingstatus " +
@@ -209,11 +209,11 @@ exports.getShowStatus = (req, res, next) => {
 exports.deleteBooking =(req,res,next)=>{
    //console.log(req.body);
    var connectDB = mysql.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "houserental"
-   });
+      host: "eu-cdbr-west-03.cleardb.net",
+      user: "bfba59f0e28796",
+      password: "681ba9b5",
+      database: "heroku_8ca467a3d193d0e"
+  });
 
    data = "DELETE FROM bookingstatus " +
    " WHERE email = " + mysql.escape(req.body.mail) +
