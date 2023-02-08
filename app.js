@@ -1,7 +1,7 @@
 const express =  require('express');
 const path    =  require('path');
 const bodyParser = require('body-parser');
-const session = require('express-session');
+const session = require('cookie-session');
 const MemoryStore = require('memorystore')(session)
 
 const app = express();
@@ -21,8 +21,8 @@ app.use(
         checkPeriod:86400000
       }),
       secret: 'secret',
-      resave: true,
-      saveUninitialized: false
+      resave: false,
+      saveUninitialized: true
     })
   );
 
