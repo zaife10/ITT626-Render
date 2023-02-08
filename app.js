@@ -32,4 +32,4 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.use(userRouter);
 app.use("/admin" ,adminRouter);
 
-app.listen(3000, () => console.log("Server is Running..."));
+app.listen(port, () => console.log("Server is Running..."));

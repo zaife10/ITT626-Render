@@ -11,9 +11,9 @@ exports.getLogin = (req, res, next) => {
     else {
         var connectDB = mysql.createConnection({
             host: "eu-cdbr-west-03.cleardb.net",
-            user: "bfba59f0e28796",
-            password: "681ba9b5",
-            database: "heroku_8ca467a3d193d0e"
+            user: "b75c9f656ffe0b",
+            password: "43d6fcd1",
+            database: "heroku_79617e604a2d6ee"
         });
         data1 = "SELECT * " +
             "FROM  bookingstatus " +
@@ -37,9 +37,9 @@ exports.postLogin = (req, res, next) => {
 
     var connectDB = mysql.createConnection({
         host: "eu-cdbr-west-03.cleardb.net",
-        user: "bfba59f0e28796",
-        password: "681ba9b5",
-        database: "heroku_8ca467a3d193d0e"
+        user: "b75c9f656ffe0b",
+        password: "43d6fcd1",
+        database: "heroku_79617e604a2d6ee"
     });
 
     data = "SELECT * " +
@@ -81,9 +81,9 @@ exports.postChnageStatus = (req, res, next) => {
 
     var connectDB = mysql.createConnection({
         host: "eu-cdbr-west-03.cleardb.net",
-        user: "bfba59f0e28796",
-        password: "681ba9b5",
-        database: "heroku_8ca467a3d193d0e"
+        user: "b75c9f656ffe0b",
+        password: "43d6fcd1",
+        database: "heroku_79617e604a2d6ee"
     });
 
     var value = 0;
@@ -138,9 +138,9 @@ exports.postAddHouse = (req, res, next) => {
    
     var connectDB = mysql.createConnection({
         host: "eu-cdbr-west-03.cleardb.net",
-        user: "bfba59f0e28796",
-        password: "681ba9b5",
-        database: "heroku_8ca467a3d193d0e"
+        user: "b75c9f656ffe0b",
+        password: "43d6fcd1",
+        database: "heroku_79617e604a2d6ee"
     });
 
     //var
@@ -233,9 +233,9 @@ exports.postSearch = (req, res, next) => {
 
     var connectDB = mysql.createConnection({
         host: "eu-cdbr-west-03.cleardb.net",
-        user: "bfba59f0e28796",
-        password: "681ba9b5",
-        database: "heroku_8ca467a3d193d0e"
+        user: "b75c9f656ffe0b",
+        password: "43d6fcd1",
+        database: "heroku_79617e604a2d6ee"
     });
 
     data = "SELECT * " +
@@ -257,9 +257,9 @@ exports.getUpdate = (req, res, next) => {
     // console.log(req.body);
     var connectDB = mysql.createConnection({
         host: "eu-cdbr-west-03.cleardb.net",
-        user: "bfba59f0e28796",
-        password: "681ba9b5",
-        database: "heroku_8ca467a3d193d0e"
+        user: "b75c9f656ffe0b",
+        password: "43d6fcd1",
+        database: "heroku_79617e604a2d6ee"
     });
 
     data = "SELECT * " +
@@ -283,9 +283,9 @@ exports.updatePrevData = (req, res, next) => {
 
     var connectDB = mysql.createConnection({
         host: "eu-cdbr-west-03.cleardb.net",
-        user: "bfba59f0e28796",
-        password: "681ba9b5",
-        database: "heroku_8ca467a3d193d0e"
+        user: "b75c9f656ffe0b",
+        password: "43d6fcd1",
+        database: "heroku_79617e604a2d6ee"
     });
 
     data = "UPDATE category " +

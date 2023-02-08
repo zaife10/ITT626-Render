@@ -35,9 +35,9 @@ exports.postLogin = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
       host: "eu-cdbr-west-03.cleardb.net",
-      user: "bfba59f0e28796",
-      password: "681ba9b5",
-      database: "heroku_8ca467a3d193d0e"
+      user: "b75c9f656ffe0b",
+      password: "43d6fcd1",
+      database: "heroku_79617e604a2d6ee"
   });
 
    data = "SELECT * " +
@@ -73,9 +73,9 @@ exports.postCreateAccount = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
       host: "eu-cdbr-west-03.cleardb.net",
-      user: "bfba59f0e28796",
-      password: "681ba9b5",
-      database: "heroku_8ca467a3d193d0e"
+      user: "b75c9f656ffe0b",
+      password: "43d6fcd1",
+      database: "heroku_79617e604a2d6ee"
   });
 
    var p1 = req.body.pass;
@@ -107,9 +107,9 @@ exports.postCategory = (req, res, next) => {
    //console.log(req.body);
    var connectDB = mysql.createConnection({
       host: "eu-cdbr-west-03.cleardb.net",
-      user: "bfba59f0e28796",
-      password: "681ba9b5",
-      database: "heroku_8ca467a3d193d0e"
+      user: "b75c9f656ffe0b",
+      password: "43d6fcd1",
+      database: "heroku_79617e604a2d6ee"
   });
 
    data = "SELECT * " +
@@ -142,9 +142,9 @@ exports.postStatus = (req, res, next) => {
    //console.log(req.body);
    var connectDB = mysql.createConnection({
       host: "eu-cdbr-west-03.cleardb.net",
-      user: "bfba59f0e28796",
-      password: "681ba9b5",
-      database: "heroku_8ca467a3d193d0e"
+      user: "b75c9f656ffe0b",
+      password: "43d6fcd1",
+      database: "heroku_79617e604a2d6ee"
   });
    var date = req.body.date;
    //console.log(date)
@@ -176,9 +176,9 @@ exports.getShowStatus = (req, res, next) => {
 
    var connectDB = mysql.createConnection({
       host: "eu-cdbr-west-03.cleardb.net",
-      user: "bfba59f0e28796",
-      password: "681ba9b5",
-      database: "heroku_8ca467a3d193d0e"
+      user: "b75c9f656ffe0b",
+      password: "43d6fcd1",
+      database: "heroku_79617e604a2d6ee"
   });
 
    data = "SELECT * " +
@@ -210,9 +210,9 @@ exports.deleteBooking =(req,res,next)=>{
    //console.log(req.body);
    var connectDB = mysql.createConnection({
       host: "eu-cdbr-west-03.cleardb.net",
-      user: "bfba59f0e28796",
-      password: "681ba9b5",
-      database: "heroku_8ca467a3d193d0e"
+      user: "b75c9f656ffe0b",
+      password: "43d6fcd1",
+      database: "heroku_79617e604a2d6ee"
   });
 
    data = "DELETE FROM bookingstatus " +
